@@ -7,6 +7,8 @@ body {
   text-align: center;
 }
 
+h2{font-size: 16px; }
+
 button.roll,
 button.dice-clear {
   width: 100px;
@@ -98,7 +100,7 @@ button.roll:disabled {
   display: flex;
   width: 300px;
   flex-direction: column;
-  margin: 1rem auto;
+  margin: 2rem auto;
   border: 1px solid black;
 }
 .dice-type.dice-header {
