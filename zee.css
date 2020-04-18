@@ -22,7 +22,8 @@ button.roll, button.dice-clear{
 
 .roll-number-container{ margin-top: 1rem; font-size: 13px; font-weight: bold;}
 .roll-number-container .roll-number-text{ margin-right: 5px; }
-.roll-number-container .roll-number{ 
+.roll-number-container .roll-number,
+.roll-number-container .dice-total-number{ 
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +35,9 @@ button.roll, button.dice-clear{
 }
 .roll-number-container.disabled .roll-number{ background-color: red; }
 
-.dice-series{list-style: none;}
+.roll-number-container .dice-total{ display: inline-block; margin-left: 3rem; }
+
+.dice-series{list-style: none; padding: 0; min-height: 61px; }
 
 
 .dice-series li{     cursor: pointer;
@@ -49,3 +52,23 @@ button.roll, button.dice-clear{
 .dice-series li.saved:after{content: "Saved"; display: block; position: absolute; text-transform: uppercase; width:100%; font-size: 11px; }
 
 .dice-series li img{width: 50px; }
+
+.dice-calc{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    margin: 1rem auto;
+    border: 1px solid black;
+}
+.dice-type.dice-header{ font-weight: bold; background-color: #5a9aea; color: #fff}
+
+.dice-calc .number-title{ }
+.dice-calc .number-title img{ width: 25px; }
+.dice-calc .dice-type{      
+    border-bottom: 1px solid black;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dice-calc .number-total{ }
