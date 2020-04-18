@@ -1,0 +1,51 @@
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{ text-align: center;}
+
+button.roll, button.dice-clear{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5%;
+    background-color: #eee;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 10px;
+    cursor: pointer;
+ }
+
+ button.roll{ background-color: #5a9aea; color: #fff;}
+ button.roll:disabled{ background-color: red; cursor: not-allowed;}
+
+.roll-number-container{ margin-top: 1rem; font-size: 13px; font-weight: bold;}
+.roll-number-container .roll-number-text{ margin-right: 5px; }
+.roll-number-container .roll-number{ 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5a9aea;
+    color: #fff;
+    border-radius: 25%;
+    width: 25px;
+    height: 25px;
+}
+.roll-number-container.disabled .roll-number{ background-color: red; }
+
+.dice-series{list-style: none;}
+
+
+.dice-series li{     cursor: pointer;
+    display: inline-block;
+    margin: 0 1rem;
+    border-bottom: 0px solid #5a9aea; 
+    position: relative; 
+    transition: border 0.5s;
+}
+.dice-series li img{ padding-bottom: 4px; border-bottom: 3px solid #fff; transition: border 0.5s; }
+.dice-series li.saved img{border-bottom: 3px solid #5a9aea; transition: border 0.5s;}
+.dice-series li.saved:after{content: "Saved"; display: block; position: absolute; text-transform: uppercase; width:100%; font-size: 11px; }
+
+.dice-series li img{width: 50px; }
