@@ -119,5 +119,7 @@ button.roll:disabled {
   justify-content: space-between;
   align-items: center;
 }
-.dice-calc .number-total {
+
+@media (max-width: 428px) { 
+  .dice-series li img{ width: 35px;}
 }
